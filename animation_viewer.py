@@ -35,7 +35,7 @@ def animate_character(data, repeat=1):
                                     x, y, data['frame_width'] * 7.5, data['frame_height'] * 7.5)
             update_canvas()
             delay(0.1)
-
+#무한반복
 while True:
     for data in character_data:
         animate_character(data, repeat=repeat_count)
