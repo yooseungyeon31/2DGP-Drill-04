@@ -32,7 +32,7 @@ def animate_character(data, repeat=1):
             clear_canvas()
             clip_x = data['left_margin'] + frame * data['frame_width']
             data['image'].clip_draw(clip_x, 0, data['frame_width'], data['frame_height'],
-                                    x, y, data['frame_width'] * 3, data['frame_height'] * 3)
+                                    x, y, data['frame_width'] * 7.5, data['frame_height'] * 7.5)
             update_canvas()
             delay(0.1)
 
