@@ -6,28 +6,36 @@ open_canvas()
 
 #애니메이션1 이미지 로드
 character1 = load_image('mario_animation.png')
+character2 = load_image('mario_animation2.png')
 
 
 # 캐릭터 중앙 위치
 x, y = 400, 300
 
-frame_width, frame_height = 30, 35
-usable_width, left_margin = 350, 7
-total_frames = (usable_width // frame_width) - 1
+character_data = [
+    {'image': character1, 'frame_width': 30, 'frame_height': 35, 'left_margin': 7, 'usable_width': 350}
+
+
+]
+
+
 repeat_count = 5
 
-for frame in range(repeat_count):
+def animate_character(data, repeat=1):
+    total_frames = (data['usable_width'] // data['frame_width']) - 1
 
-    for frame in range(total_frames):
+    for frame in range(repeat):
+        for frame in range(total_frames):
+            clear_canvas()
+            clip_x = data['left_margin'] + frame * data['frame_width']
+            data['image'].clip_draw(clip_x, 0, data['frame_width'], data['frame_height'],
+                                    x, y, data['frame_width'] * 3, data['frame_height'] * 3)
+            update_canvas()
+            delay(0.1)
 
-        clear_canvas()
-        clip_x = left_margin + frame * frame_width
-        character1.clip_draw(clip_x, 0, frame_width, frame_height, x, y, frame_width*3, frame_height*3)
-        update_canvas()
-        delay(0.1)
 
-
-
+for data in character_data:
+    animate_character(data, repeat=repeat_count)
 
 
 
