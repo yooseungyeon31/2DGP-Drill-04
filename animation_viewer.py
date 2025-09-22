@@ -15,10 +15,10 @@ character4 = load_image('mario_animation4.png')
 x, y = 400, 300
 
 character_data = [
-   # {'image': character1, 'frame_width': 30, 'frame_height': 35, 'left_margin': 7, 'usable_width': 350},
+    {'image': character1, 'frame_width': 30, 'frame_height': 35, 'left_margin': 7, 'usable_width': 350},
     {'image': character2, 'frame_width': 32, 'frame_height': 36, 'left_margin': 5, 'usable_width': 360},
-    #{'image': character3, 'frame_width': 36, 'frame_height': 37, 'left_margin': 1, 'usable_width': 287},
-    #{'image': character4, 'frame_width': 29, 'frame_height': 35, 'left_margin': 1, 'usable_width': 222}
+    {'image': character3, 'frame_width': 36, 'frame_height': 37, 'left_margin': 1, 'usable_width': 287},
+    {'image': character4, 'frame_width': 29, 'frame_height': 35, 'left_margin': 1, 'usable_width': 222}
 ]
 
 #반복 횟수
