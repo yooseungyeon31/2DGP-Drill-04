@@ -24,7 +24,7 @@ character_data = [
 #반복 횟수
 repeat_count = 5
 
-#캐릭터 애니메이션 함수
+#캐릭터 애니메이션
 def animate_character(data, repeat=1):
     total_frames = (data['usable_width'] // data['frame_width']) - 1
 
