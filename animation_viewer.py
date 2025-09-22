@@ -7,6 +7,8 @@ open_canvas()
 #애니메이션1 이미지 로드
 character1 = load_image('mario_animation.png')
 character2 = load_image('mario_animation2.png')
+character3 = load_image('mario_animation3.png')
+character4 = load_image('mario_animation4.png')
 
 
 # 캐릭터 중앙 위치
@@ -14,11 +16,12 @@ x, y = 400, 300
 
 character_data = [
     {'image': character1, 'frame_width': 30, 'frame_height': 35, 'left_margin': 7, 'usable_width': 350},
-    {'image': character2, 'frame_width': 32, 'frame_height': 36, 'left_margin': 5, 'usable_width': 360}
+    {'image': character2, 'frame_width': 32, 'frame_height': 36, 'left_margin': 5, 'usable_width': 360},
+    {'image': character3, 'frame_width': 36, 'frame_height': 41, 'left_margin': 1, 'usable_width': 287}
 
 ]
 
-
+#반복 횟수
 repeat_count = 5
 
 def animate_character(data, repeat=1):
