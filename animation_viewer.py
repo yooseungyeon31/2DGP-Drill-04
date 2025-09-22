@@ -36,9 +36,10 @@ def animate_character(data, repeat=1):
             update_canvas()
             delay(0.1)
 
-
-for data in character_data:
-    animate_character(data, repeat=repeat_count)
+while True:
+    for data in character_data:
+        animate_character(data, repeat=repeat_count)
+        delay(1)
 
 
 
