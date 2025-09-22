@@ -3,10 +3,15 @@
 from pico2d import *
 
 open_canvas()
-character = load_image('animation.png')
 
-#캐릭터 위치 지정
-x,y = 400,300
+#애니메이션1 이미지 로드
+character1 = load_image('mario_animation.png')
+
+
+# 캐릭터 중앙 위치
+x, y = 400, 300
+
+
 
 
 
