@@ -13,8 +13,8 @@ character2 = load_image('mario_animation2.png')
 x, y = 400, 300
 
 character_data = [
-    {'image': character1, 'frame_width': 30, 'frame_height': 35, 'left_margin': 7, 'usable_width': 350}
-
+    {'image': character1, 'frame_width': 30, 'frame_height': 35, 'left_margin': 7, 'usable_width': 350},
+    {'image': character2, 'frame_width': 32, 'frame_height': 36, 'left_margin': 5, 'usable_width': 360}
 
 ]
 
