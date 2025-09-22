@@ -27,7 +27,7 @@ repeat_count = 5
 def animate_character(data, repeat=1):
     total_frames = (data['usable_width'] // data['frame_width']) - 1
 
-    for frame in range(repeat):
+    for _ in range(repeat):
         for frame in range(total_frames):
             clear_canvas()
             clip_x = data['left_margin'] + frame * data['frame_width']
